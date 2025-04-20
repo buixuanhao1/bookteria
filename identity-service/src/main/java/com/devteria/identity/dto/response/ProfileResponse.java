@@ -1,16 +1,18 @@
-package com.devteria.profile.dto.request;
+package com.devteria.identity.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProfileCreationRequest {
+public class ProfileResponse {
+    String id;
     String userId;
     String firstName;
     String lastName;
